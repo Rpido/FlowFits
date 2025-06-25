@@ -1,0 +1,105 @@
+{
+  "rules": {
+    "users": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid"
+      }
+    },
+    "goals": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId"],
+      "$goalId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'title', 'description']) && newData.child('userId').val() === auth.uid"
+      }
+    },
+    "workouts": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId", "date", "type", "isCompleted", "startTime", "endTime"],
+      "$workoutId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'name', 'type']) && newData.child('userId').val() === auth.uid",
+        "exercises": {
+          "$exerciseIndex": {
+            ".validate": "newData.hasChildren(['name'])",
+            "exerciseSets": {
+              "$setIndex": {
+                ".validate": "newData.hasChildren(['setNumber', 'reps', 'weight'])"
+              }
+            }
+          }
+        }
+      }
+    },
+    "workoutSessions": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId", "workoutId", "sessionStartTime", "isActive"],
+      "$sessionId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'workoutId', 'sessionStartTime']) && newData.child('userId').val() === auth.uid"
+      }
+    },
+    "habits": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId", "isActive", "category", "frequency", "createdAt", "updatedAt", "priority"],
+      "$habitId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'name', 'frequency']) && newData.child('userId').val() === auth.uid",
+        "streakData": {
+          ".validate": "newData.child('currentStreak').isNumber() && newData.child('longestStreak').isNumber() && newData.child('totalCompletions').isNumber()"
+        },
+        "progressData": {
+          ".validate": "newData.child('completedDays').isNumber() && newData.child('totalDays').isNumber()"
+        },
+        "customDays": {
+          ".validate": "newData.val() === null || newData.hasChildren()"
+        }
+      }
+    },
+    "habitLogs": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId", "habitId", "date", "completed", "loggedAt", "completedAt"],
+      "$logId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'habitId', 'date']) && newData.child('userId').val() === auth.uid && newData.child('completed').isBoolean()"
+      }
+    },
+    "habitReminders": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId", "habitId", "reminderTime", "isActive"],
+      "$reminderId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId', 'habitId', 'reminderTime']) && newData.child('userId').val() === auth.uid"
+      }
+    },
+    "achievements": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["userId"],
+      "$achievementId": {
+        ".read": "auth != null && (data.child('userId').val() === auth.uid || !data.exists())",
+        ".write": "auth != null && (data.child('userId').val() === auth.uid || newData.child('userId').val() === auth.uid || !data.exists())",
+        ".validate": "newData.hasChildren(['userId']) && newData.child('userId').val() === auth.uid"
+      }
+    },
+    "analytics": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid"
+      }
+    }
+  }
+} 

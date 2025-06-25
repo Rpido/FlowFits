@@ -1,0 +1,313 @@
+<resources>
+    <string name="app_name">FlowFits</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_goals">Goals</string>
+    <string name="nav_workouts">Workouts</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_habits">Habits</string>
+    
+    <!-- Common -->
+    <string name="welcome">Welcome</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_welcome">Welcome back!</string>
+    <string name="quick_stats">Quick Stats</string>
+    <string name="todays_habits">Today\'s Habits</string>
+    <string name="active_goals">Active Goals</string>
+    <string name="recent_workouts">Recent Workouts</string>
+    
+    <!-- Goals -->
+    <string name="goals_title">My Goals</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="goal_progress">Progress</string>
+    <string name="days_remaining">days remaining</string>
+    <string name="goal_completed">Goal Completed!</string>
+    <string name="goals_subtitle">Turn your dreams into achievements</string>
+    <string name="goals_empty_title">Start Your Journey!</string>
+    <string name="goals_empty_message">Set meaningful goals and track your progress toward success</string>
+    <string name="create_first_goal">Create Your First Goal</string>
+    <string name="goals_quick_tips">💡 Quick Tips</string>
+    <string name="goals_tips_content">• Make goals specific and measurable\n• Set realistic deadlines\n• Break big goals into smaller milestones\n• Update progress regularly</string>
+    <string name="goal_priority">Priority</string>
+    <string name="goal_template_weight_loss">Lose 10kg</string>
+    <string name="goal_template_fitness">Exercise 3x/week</string>
+    <string name="goal_template_reading">Read 12 books</string>
+    <string name="goal_template_savings">Save $5000</string>
+    <string name="goal_validation_title_required">Please enter a goal title</string>
+    <string name="goal_validation_title_too_short">Title must be at least 3 characters</string>
+    <string name="goal_validation_target_required">Target value is required</string>
+    <string name="goal_validation_target_positive">Target must be greater than 0</string>
+    <string name="goal_validation_starting_required">Starting value is required</string>
+    <string name="goal_validation_value_negative">Value cannot be negative</string>
+    <string name="goal_validation_category_required">Please select a category for your goal</string>
+    <string name="goal_validation_type_required">Please select how you want to track progress</string>
+    <string name="goal_validation_unit_required">Please select a unit of measurement</string>
+    <string name="goal_validation_deadline_required">Please set a deadline</string>
+    <string name="goal_created_success">Goal created successfully! 🎯</string>
+    <string name="goal_updated_success">Goal updated successfully! 🎉</string>
+    <string name="goal_achieved_celebration">🎉 Congratulations! Goal achieved!</string>
+    <string name="goal_progress_updated">Progress updated! %.1f%% complete</string>
+    <string name="progress_motivation">Every step forward is progress! 💪</string>
+    <string name="discard_changes_title">Discard changes?</string>
+    <string name="discard_changes_message">You have unsaved changes. Are you sure you want to exit?</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="discard">Discard</string>
+    
+    <!-- Workouts -->
+    <string name="workouts_title">My Workouts</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="workout_duration">Duration</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="duration">Duration</string>
+    <string name="calories">Calories</string>
+    <string name="exercises">Exercises</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="workout_notes">Notes</string>
+    
+    <!-- Exercise Management -->
+    <string name="add_exercise">Add Exercise</string>
+    <string name="exercise_name">Exercise Name</string>
+    <string name="exercise_category">Category</string>
+    <string name="muscle_group">Muscle Group</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="weight">Weight</string>
+    <string name="distance">Distance</string>
+    <string name="unit">Unit</string>
+    <string name="exercise_notes">Exercise Notes</string>
+    <string name="more_options">More options</string>
+    <string name="less_options">Less options</string>
+    <string name="remove_exercise">Remove Exercise</string>
+    <string name="no_exercises_added">No exercises added yet</string>
+    <string name="tap_add_exercise">Tap \'Add Exercise\' to get started</string>
+    <string name="exercise_added">Exercise added!</string>
+    <string name="enter_exercise_name">Please enter exercise name</string>
+    <string name="default_values">Default Values (Optional)</string>
+    
+    <!-- Habits -->
+    <string name="habits_title">Habits</string>
+    <string name="habits_today">Today\'s Habits</string>
+    <string name="habits_all">All Habits</string>
+    <string name="habits_active">Active Habits</string>
+    <string name="habits_inactive">Inactive Habits</string>
+    <string name="habits_empty">No habits found</string>
+    <string name="habits_empty_today">No habits scheduled for today</string>
+    <string name="habits_add">Add Habit</string>
+    <string name="habits_edit">Edit Habit</string>
+    <string name="habits_delete">Delete Habit</string>
+    <string name="habits_delete_confirm">Are you sure you want to delete this habit?</string>
+    <string name="habits_created">Habit created successfully!</string>
+    <string name="habits_updated">Habit updated successfully!</string>
+    <string name="habits_deleted">Habit deleted successfully!</string>
+    <string name="habits_completed">Habit completed! 🎉</string>
+    <string name="habits_unchecked">Habit unchecked</string>
+    <string name="habits_status_toggled">Habit status updated!</string>
+    
+    <!-- Habit Creation/Edit -->
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_name_hint">Enter habit name</string>
+    <string name="habit_description">Description</string>
+    <string name="habit_description_hint">Optional description</string>
+    <string name="habit_category">Category</string>
+    <string name="habit_frequency">Frequency</string>
+    <string name="habit_target">Target</string>
+    <string name="habit_target_hint">Daily target (optional)</string>
+    <string name="habit_unit">Unit</string>
+    <string name="habit_unit_hint">e.g., glasses, minutes, pages</string>
+    <string name="habit_priority">Priority</string>
+    <string name="habit_reminder">Reminder</string>
+    <string name="habit_reminder_time">Reminder Time</string>
+    <string name="habit_reminder_enabled">Enable Reminder</string>
+    <string name="habit_days">Days</string>
+    <string name="habit_select_days">Select Days</string>
+    <string name="habit_save">Save Habit</string>
+    <string name="habit_cancel">Cancel</string>
+    
+    <!-- Categories -->
+    <string name="category_health">Health</string>
+    <string name="category_fitness">Fitness</string>
+    <string name="category_nutrition">Nutrition</string>
+    <string name="category_mindfulness">Mindfulness</string>
+    <string name="category_productivity">Productivity</string>
+    <string name="category_learning">Learning</string>
+    <string name="category_social">Social</string>
+    <string name="category_creativity">Creativity</string>
+    <string name="category_lifestyle">Lifestyle</string>
+    <string name="category_other">Other</string>
+    <string name="category_all">All Categories</string>
+    
+    <!-- Frequencies -->
+    <string name="frequency_daily">Daily</string>
+    <string name="frequency_weekly">Weekly</string>
+    <string name="frequency_custom">Custom</string>
+    <string name="frequency_daily_desc">Every day</string>
+    <string name="frequency_weekly_desc">Specific days of the week</string>
+    <string name="frequency_custom_desc">Custom schedule</string>
+    
+    <!-- Priorities -->
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    
+    <!-- Days of Week -->
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="day_mon">MON</string>
+    <string name="day_tue">TUE</string>
+    <string name="day_wed">WED</string>
+    <string name="day_thu">THU</string>
+    <string name="day_fri">FRI</string>
+    <string name="day_sat">SAT</string>
+    <string name="day_sun">SUN</string>
+    
+    <!-- Streak & Progress -->
+    <string name="streak_current">Current Streak</string>
+    <string name="streak_longest">Longest Streak</string>
+    <string name="streak_days">days</string>
+    <string name="streak_day">day</string>
+    <string name="progress_completion_rate">Completion Rate</string>
+    <string name="progress_today">Today\'s Progress</string>
+    <string name="progress_target">Target</string>
+    <string name="progress_completed">Completed</string>
+    <string name="progress_partial">Partial</string>
+    <string name="progress_not_completed">Not completed</string>
+    
+    <!-- Filters -->
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_inactive">Inactive</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_search">Search habits</string>
+    <string name="filter_search_hint">Search by name, description, or category</string>
+    
+    <!-- Check-in Mode -->
+    <string name="checkin_mode">Check-in Mode</string>
+    <string name="checkin_mode_on">Check-in Mode ON</string>
+    <string name="checkin_mode_off">Check-in Mode OFF</string>
+    <string name="checkin_complete_habit">Tap to complete habit</string>
+    <string name="checkin_not_scheduled">Not scheduled for today</string>
+    
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics</string>
+    <string name="weekly_overview">Weekly Overview</string>
+    <string name="monthly_overview">Monthly Overview</string>
+    <string name="total_workouts">Total Workouts</string>
+    <string name="total_calories">Total Calories</string>
+    <string name="goals_completed">Goals Completed</string>
+    <string name="analytics_total_habits">Total Active Habits</string>
+    <string name="analytics_completed_today">Completed Today</string>
+    <string name="analytics_scheduled_today">Scheduled Today</string>
+    <string name="analytics_completion_rate_today">Today\'s Completion Rate</string>
+    <string name="analytics_longest_streak">Longest Streak</string>
+    <string name="analytics_active_streaks">Active Streaks</string>
+    
+    <!-- Live Workout Execution -->
+    <string name="workout_execution_title">Live Workout</string>
+    <string name="current_exercise">Current Exercise</string>
+    <string name="exercise_progress">Exercise %1$d of %2$d</string>
+    <string name="sets_completed">%1$d / %2$d sets completed</string>
+    <string name="exercises_completed">%1$d of %2$d exercises completed</string>
+    <string name="workout_timer">00:00</string>
+    <string name="rest_timer">02:00</string>
+    <string name="rest_time">REST TIME</string>
+    <string name="pause_workout">Pause</string>
+    <string name="resume_workout">Resume</string>
+    <string name="skip_exercise">Skip</string>
+    <string name="skip_rest">Skip Rest</string>
+    <string name="finish_workout">Finish</string>
+    <string name="completed_checkmark">Completed ✓</string>
+    <string name="record_performance">Record your performance:</string>
+    <string name="workout_started">Workout started!</string>
+    <string name="workout_paused">Workout paused</string>
+    <string name="workout_resumed">Workout resumed</string>
+    <string name="rest_time_started">Rest time started</string>
+    <string name="rest_time_finished">Rest time finished</string>
+    <string name="workout_completed_successfully">Workout completed successfully!</string>
+    <string name="no_exercises_in_workout">No exercises in this workout. Please add exercises first.</string>
+    <string name="confirm_finish_workout">Are you sure you want to finish this workout?</string>
+    <string name="confirm_exit_workout">Are you sure you want to exit? Your progress will be lost.</string>
+    <string name="target_format">Target: %1$d sets × %2$d reps</string>
+    <string name="target_format_with_weight">Target: %1$d sets × %2$d reps @ %3$.1f %4$s</string>
+    <string name="target_distance_format">Target: %1$.1f %2$s</string>
+    
+    <!-- Validation Messages -->
+    <string name="validation_habit_name_required">Habit name is required</string>
+    <string name="validation_frequency_required">Please select a frequency</string>
+    <string name="validation_days_required">Please select at least one day</string>
+    <string name="validation_target_invalid">Please enter a valid target</string>
+    <string name="validation_reminder_time_invalid">Please select a valid reminder time</string>
+    
+    <!-- Status Messages -->
+    <string name="status_active">Active</string>
+    <string name="status_inactive">Inactive</string>
+    <string name="status_scheduled_today">Scheduled for today</string>
+    <string name="status_not_scheduled_today">Not scheduled for today</string>
+    <string name="status_completed_today">Completed today</string>
+    <string name="status_pending_today">Pending today</string>
+    
+    <!-- Actions -->
+    <string name="action_toggle_status">Toggle Status</string>
+    <string name="action_edit_habit">Edit Habit</string>
+    <string name="action_delete_habit">Delete Habit</string>
+    <string name="action_complete_habit">Complete Habit</string>
+    <string name="action_mark_incomplete">Mark Incomplete</string>
+    <string name="action_view_details">View Details</string>
+    <string name="action_view_history">View History</string>
+    
+    <!-- Time Related -->
+    <string name="time_last_completed">Last completed</string>
+    <string name="time_never_completed">Never completed</string>
+    <string name="time_reminder_at">Reminder at</string>
+    <string name="time_created_on">Created on</string>
+    <string name="time_updated_on">Updated on</string>
+    
+    <!-- Loading and Error States -->
+    <string name="loading_habits">Loading habits...</string>
+    <string name="loading_creating_habit">Creating habit...</string>
+    <string name="loading_updating_habit">Updating habit...</string>
+    <string name="loading_deleting_habit">Deleting habit...</string>
+    <string name="error_loading_habits">Failed to load habits</string>
+    <string name="error_creating_habit">Failed to create habit</string>
+    <string name="error_updating_habit">Failed to update habit</string>
+    <string name="error_deleting_habit">Failed to delete habit</string>
+    <string name="error_logging_habit">Failed to log habit completion</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    
+    <!-- Habit Logging -->
+    <string name="log_completion_today">Log completion for today</string>
+    <string name="log_progress">Log Progress</string>
+    <string name="log_progress_value">Progress Value</string>
+    <string name="log_progress_notes">Notes (optional)</string>
+    <string name="log_mood">How did it feel?</string>
+    <string name="log_difficulty">Difficulty (1-5)</string>
+    <string name="log_time_spent">Time Spent (minutes)</string>
+    <string name="log_location">Location</string>
+    <string name="log_save">Save Log</string>
+    
+    <!-- Moods -->
+    <string name="mood_excellent">Excellent</string>
+    <string name="mood_good">Good</string>
+    <string name="mood_neutral">Neutral</string>
+    <string name="mood_difficult">Difficult</string>
+    <string name="mood_struggled">Struggled</string>
+    
+    <!-- New string resource -->
+    <string name="stat_icon">Stat icon</string>
+</resources>

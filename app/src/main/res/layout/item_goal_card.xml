@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Goal Title -->
+            <TextView
+                android:id="@+id/tv_goal_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/chip_container"
+                android:text="Goal Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginEnd="12dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                tools:text="Lose 10kg Weight for Better Health" />
+
+            <!-- Priority and Category Chips Container -->
+            <LinearLayout
+                android:id="@+id/chip_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_goal_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:text="HIGH"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    app:chipMinHeight="28dp"
+                    app:chipBackgroundColor="?attr/colorError"
+                    app:chipStrokeWidth="0dp"
+                    app:textStartPadding="8dp"
+                    app:textEndPadding="8dp"
+                    android:textColor="?attr/colorOnError"
+                        tools:text="HIGH" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_goal_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FITNESS"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                    app:chipMinHeight="28dp"
+                    app:chipBackgroundColor="?attr/colorPrimaryContainer"
+                    app:chipStrokeWidth="0dp"
+                    app:textStartPadding="8dp"
+                    app:textEndPadding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"
+                tools:text="FITNESS" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_goal_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal Description"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            tools:text="Reduce body weight through consistent exercise and healthy eating habits for better overall health" />
+
+        <!-- Progress Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Progress Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_goal_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30%"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimary"
+                        tools:text="30%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" complete"
+                android:textSize="14sp"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:layout_marginStart="4dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_goal_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACTIVE"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSecondaryContainer"
+                    android:background="?attr/colorSecondaryContainer"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp"
+                    app:drawableStartCompat="@drawable/ic_trending_up"
+                    app:drawableTint="?attr/colorOnSecondaryContainer"
+                    android:drawablePadding="4dp"
+                    android:layout_marginStart="12dp"
+                    tools:text="ACTIVE" />
+
+            </LinearLayout>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progress_goal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progress="30"
+                android:max="100"
+                android:progressTint="?attr/colorPrimary"
+                android:progressBackgroundTint="?attr/colorOutlineVariant"
+                android:layout_marginBottom="8dp"
+                tools:progress="30" />
+
+            <!-- Progress Values -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_progress_values"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3 / 10 kg"
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    tools:text="3 / 10 kg" />
+
+                <TextView
+                    android:id="@+id/tv_remaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 kg to go"
+                    android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textStyle="italic"
+                    tools:text="7 kg to go" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Deadline and Info Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <!-- Deadline Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginEnd="8dp"
+                    app:tint="?attr/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goal_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:text="30 days left"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"
+                        tools:text="30 days left" />
+
+                    <TextView
+                        android:id="@+id/tv_deadline_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due Jan 15, 2024"
+                        android:textSize="11sp"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        tools:text="Due Jan 15, 2024" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Streak Badge -->
+            <LinearLayout
+                android:id="@+id/layout_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+            android:gravity="center_vertical"
+                android:background="?attr/colorTertiaryContainer"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:layout_marginStart="12dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_fire"
+                    android:layout_marginEnd="6dp"
+                    app:tint="?attr/colorOnTertiaryContainer" />
+
+                <TextView
+                    android:id="@+id/tv_goal_streak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 days"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnTertiaryContainer"
+                    tools:text="5 days" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_update_progress"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Update Progress"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"
+                app:icon="@drawable/ic_trending_up"
+                app:iconGravity="start"
+                app:cornerRadius="24dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_menu"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:icon="@drawable/ic_expand_more"
+                app:iconGravity="textStart"
+                app:cornerRadius="24dp"
+                android:contentDescription="More options" />
+
+        </LinearLayout>
+
+        <!-- Hidden Edit/Delete Buttons (initially collapsed) -->
+        <LinearLayout
+            android:id="@+id/layout_expanded_actions"
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit_goal"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Edit"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                app:icon="@drawable/ic_edit"
+                app:iconGravity="start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete_goal"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Delete"
+                android:textSize="12sp"
+                android:textColor="?attr/colorError"
+                app:icon="@drawable/ic_delete"
+                app:iconGravity="start"
+                app:iconTint="?attr/colorError" />
+
+        </LinearLayout>
+
+        <!-- Milestone Indicator (optional) -->
+        <LinearLayout
+            android:id="@+id/layout_milestone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="?attr/colorSurfaceVariant"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_flag"
+                android:layout_marginEnd="8dp"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_next_milestone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎯 Next milestone: 5kg by Dec 15"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="🎯 Next milestone: 5kg by Dec 15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView> 
