@@ -1,111 +1,86 @@
-# 🏃‍♂️ FitFlows - Fitness Tracking App
+# FitFlows - Fitness Goals and Milestones Tracker App
 
-FitFlows is a comprehensive Android fitness tracking application built with Java and Firebase. It helps users manage their fitness goals, log workouts, track daily habits, and analyze their progress with detailed analytics.
+![Image](https://github.com/user-attachments/assets/3f59cdc0-ffff-47bf-8364-8163bb417ba3)
 
-## ✨ Features
+## Overview
 
-### 🔐 **User Authentication**
-- Secure user registration and login with Firebase Authentication
-- Email verification workflow
-- Password strength validation
-- User profile management
-- Secure session handling with automatic logout
+FlowFits is a comprehensive Android fitness tracking application built with Java and Firebase. It's a modern, feature-rich mobile app designed to help users manage their fitness journey through goal setting, workout logging, habit tracking, and detailed analytics. The application follows Material Design 3 principles and implements the MVVM (Model-View-ViewModel) architecture pattern for robust, maintainable code.
 
-### 🎯 **Goal Management**
+The app provides users with a complete fitness management solution, allowing them to set personalized goals, track their workouts with detailed exercise information, build and maintain healthy habits through streak tracking, and visualize their progress through comprehensive analytics. With real-time data synchronization and offline capabilities, users can seamlessly track their fitness journey across multiple devices.
+
+## Requirements
+
+- **Platform**: Android (API level 29+)
+- **Language**: Java 11
+- **Backend**: Firebase (Authentication, Realtime Database, Analytics, Storage)
+- **Minimum SDK**: Android 5.0 (API 21)
+- **Target SDK**: Android 14 (API 34)
+- **Build System**: Gradle with Kotlin DSL
+
+
+## Features
+
+### **Goal Management**
+![Image](https://github.com/user-attachments/assets/912a275c-056b-4150-a5c1-f364b52624ea)
 - Create custom fitness goals with targets and deadlines
 - Track progress with visual progress bars
 - Categorize goals (Weight Loss, Muscle Gain, Endurance, Strength, Flexibility)
 - Set deadlines and monitor remaining time
 
-### 💪 **Workout Logging**
+### **Workout Logging**
+![Image](https://github.com/user-attachments/assets/6626eb8c-553a-4e28-a9a8-58102efd415b)
 - Log various types of workouts (Cardio, Strength, Flexibility, Sports)
 - Track duration, calories burned, and exercise details
 - View workout history and statistics
 - Link workouts to specific goals
 
-### ✅ **Daily Habits & Streaks**
+### **Daily Habits & Streaks**
+![Image](https://github.com/user-attachments/assets/fae2ca4a-4f0b-43bb-9636-2508a16a909a)
 - Create and track daily, weekly, or custom frequency habits
 - Build and maintain streaks with gamification
 - Visual streak indicators (🔥 current, 👑 longest)
 - Habit completion tracking with progress analytics
 
-### 📊 **Analytics Dashboard**
+### **Analytics Dashboard**
+![Image](https://github.com/user-attachments/assets/03898460-21e7-4914-8b37-6818215173f2)
 - Comprehensive progress statistics
 - Weekly and monthly overviews
 - Goal completion rates
 - Habit compliance tracking
 - Visual charts and progress indicators
 
-### 🏠 **Personalized Dashboard**
+### **Personalized Dashboard**
+![Image](https://github.com/user-attachments/assets/6302edf2-80ed-40fa-92d0-d552eb54774c)
 - User-specific welcome screen with profile info
 - Quick stats overview
 - Today's habits at a glance
 - Active goals summary
 - Recent workout highlights
 
-## 🚀 **Getting Started**
+### **Demo Video**
+Click the link to watch https://youtu.be/guaZskA1WFg?si=wadYIXf8BpuVW4a_
 
-### **Prerequisites**
-- Android Studio Arctic Fox or newer
-- Android SDK 29+
-- Java 11
-- Firebase project setup
+### **Researcher/Developer**
+- Rolando P. Pido
+- Jierald D. Santos
+- John Harold M. Gele
+- James Errol A. De Guzman
 
-### **Setup Instructions**
+### **Adviser:** 
+* Jefferson A. Costales
 
-1. **Clone the Repository**
-2. **Firebase Setup**
-   - Create a new Firebase project at Firebase Console
-   - Enable Authentication, Realtime Database, and Analytics
-   - Download google-services.json and place it in app/ directory
-   - Replace the placeholder google-services.json with your actual configuration
+### **School Name:**
+Eulogio "Amang" Rodriguez Insitute of Science and Technology
 
-3. **Open in Android Studio**
-   - Open Android Studio
-   - Select "Open an existing project"
-   - Navigate to the flowfits directory and open it
+Nagtahan, Sampaloc, Manila, Philippines
 
-4. **Build and Run**
-   - Let Gradle sync complete
-   - Connect an Android device or start an emulator
-   - Click "Run" or press Ctrl+R
+College of Arts and Sciences
 
-## 🏗️ **Architecture**
+ITE Department
 
-### **MVVM Pattern**
-- **Model**: Data classes (User, Goal, Workout, Habit, HabitLog)
-- **View**: Activities and Fragments with XML layouts
-- **ViewModel**: Business logic and UI state management
+## Course: 
+* Bachelor of Science in Information Technology
 
-### **Tech Stack**
-- **Language**: Java
-- **UI**: XML layouts with Material Design 3
-- **Backend**: Firebase (Realtime Database, Authentication, Analytics)
-- **Architecture**: MVVM with Repository Pattern
-- **Navigation**: Bottom Navigation with Fragment navigation
+## Date: 
+* June 26, 2025
 
-## 📱 **App Status**
-
-### ✅ **Completed**
-- **🔧 Core Architecture**: MVVM pattern with repository structure
-- **🔥 Firebase Integration**: Realtime Database for all data operations
-- **🔐 User Authentication**: Complete login/register system with email verification
-- **📱 Modern UI**: Material Design 3 with bottom navigation
-- **🎯 Goal Management**: Full CRUD operations with progress tracking
-- **✅ Habit Tracking**: Complete system with streak management and logging
-- **👤 User Profiles**: Personalized dashboard with user information
-- **📊 Data Models**: Comprehensive models for User, Goal, Habit, HabitLog
-- **🛠️ Repository Layer**: GoalRepository, HabitRepository, UserRepository
-- **🎨 UI Components**: Activities, fragments, adapters with real-time updates
-- **✅ Build Success**: App compiles and builds successfully
-
-### 🔄 **Next Steps**
-- **💪 Workout Module**: Complete workout logging functionality
-- **📊 Analytics**: Charts and detailed progress visualization
-- **📱 Notifications**: Push notifications for habit reminders
-- **🎨 UI Polish**: Enhanced animations and user experience
-- **🔧 Optimization**: Performance improvements and data sync optimization
-
----
-
-**Built with ❤️ using Android Studio and Firebase** 
